@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@android:color/white"
+
+>
+
+    <ImageView
+        android:id="@+id/notification_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+        <TextView
+            android:id="@+id/notification_song_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Yamagsummi"
+            android:layout_marginTop="3dp"
+
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+
+            android:lines="1"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+        />
+
+
+        <ImageView
+            android:id="@+id/notification_skip_previous"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_skip_previous_black_48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+        />
+
+        <ImageView
+            android:id="@+id/notification_play_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_pause_black_48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+        />
+
+        <ImageView
+            android:id="@+id/notification_skip_next"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_skip_next_black_48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>
